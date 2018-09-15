@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 
-befoire_install:
+before_install:
   - docker build -t annamalunina/dockerfrontend -f Dockerfile.dev .
 
 script:
