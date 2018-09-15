@@ -3,7 +3,7 @@ services:
   - docker
 
 befoire_install:
-  - docker build -t lm/frontend -f Dockerfile.dev .
+  - docker build -t lm/dockerfrontend -f Dockerfile.dev .
 
 script:
   - docker run lm/frontend npm run test -- --coverage
