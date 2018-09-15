@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+befoire_install:
+  - docker build -t lm/frontend -f Dockerfile.dev .
+
+script:
+  - docker run lm/frontend npm run test -- --coverage
