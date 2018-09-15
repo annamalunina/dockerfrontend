@@ -13,7 +13,7 @@ deploy:
   region: "us-west-2"
   app: "dockerfrontend"
   env: "Dockerfrontend-env"
-  bucket_name: "dockerfrontend"
+  bucket_name: "elasticbeanstalk-us-west-2-215807299913"
   bucket_path: "dockerfrontend"
   on:
     branch: master
